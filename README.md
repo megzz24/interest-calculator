@@ -11,7 +11,7 @@ This page is designed to help users calculate simple and compound interest on th
 - View the interest gained.
 
 ## Calculate your Interest now!
-Click here: [Interest Calculator](https://megzz24.github.io/interest_calculator/)
+Click here: [Interest Calculator](https://megzz24.github.io/interest-calculator/)
 
 ## 📸Screenshot
 
