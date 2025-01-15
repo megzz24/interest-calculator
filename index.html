@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Interest Calculator</h1>
+    </div>
+    <div id="display">
+        <div id="input" class="box">
+            <p>Simple / Compound Interest</p>
+            <div id="choices">
+                <label>
+                    <input type="radio" name="choice" value="simple" checked>
+                    Simple Interest
+                </label>
+                <label>
+                    <input type="radio" name="choice" value="compound">
+                    Compound Interest
+                </label>
+            </div>
+            <hr>
+
+            <p>Principal Amount (Rs.)</p>
+            <input type="text" id="principal" value="10000">
+
+            <p>Annual Rate</p>
+            <input type="text" id="rate" value="10">
+
+            <p>Period Unit</p>
+            <select id="unit" name="periodUnits">
+                <option value="Days">Days</option>
+                <option value="Weeks">Weeks</option>
+                <option value="Months">Months</option>
+                <option value="Quarters">Quarters</option>
+                <option value="Years" selected>Years</option>
+            </select>
+
+            <div id="compound">
+                <p>Compound Frequency</p>
+                <select id="frequency" name="compoundFrequencies">
+                    <option value="Daily" selected>Daily</option>
+                    <option value="Weekly">Weekly</option>
+                    <option value="Monthly">Monthly</option>
+                    <option value="Quarterly">Quarterly</option>
+                    <option value="Semi-Annually">Semi-Annually</option>
+                    <option value="Yearly">Yearly</option>
+                </select>
+            </div>
+
+            <p>Period Value</p>
+            <input type="text" id="value" value="1">
+        </div>
+
+        <div id="output" class="box">
+            <div id="result"></div>
+            <canvas id="interestChart"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
