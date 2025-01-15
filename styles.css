@@ -1,0 +1,77 @@
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: powderblue;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color:darkturquoise;
+    color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#display {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 20px 10%;
+}
+
+hr {
+    border: 0;
+    background-color:powderblue;
+    height: 2px;
+}
+
+.box {
+    flex: 1;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    background-color: azure;
+    padding-bottom: 50px;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 2px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+label {
+    margin: 2px 0 5px;
+    display: block;
+}
+
+#choices {
+    display: flex;
+    gap: 15px;
+}
+
+#output {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+#result {
+    margin-bottom: 20px;
+}
+
+#interestChart {
+    max-width: 300px;
+    max-height: 300px;
+}
